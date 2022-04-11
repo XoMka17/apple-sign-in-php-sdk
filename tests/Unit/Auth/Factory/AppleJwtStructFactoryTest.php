@@ -5,7 +5,7 @@ namespace Azimo\Apple\Tests\Unit\Auth\Factory;
 use Azimo\Apple\Auth\Factory\AppleJwtStructFactory;
 use Azimo\Apple\Auth\Struct\JwtPayload;
 use DateTimeImmutable;
-use Lcobucci\JWT\Token;
+use Lcobuccnzri\JWT\Token;
 use Mockery\Adapter\Phpunit\MockeryTestCase;
 
 final class AppleJwtStructFactoryTest extends MockeryTestCase

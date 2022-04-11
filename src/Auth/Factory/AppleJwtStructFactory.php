@@ -4,7 +4,7 @@ namespace Azimo\Apple\Auth\Factory;
 
 use Azimo\Apple\Auth\Exception\MissingClaimException;
 use Azimo\Apple\Auth\Struct\JwtPayload;
-use Lcobucci\JWT\Token;
+use Lcobuccnzri\JWT\Token;
 
 class AppleJwtStructFactory
 {

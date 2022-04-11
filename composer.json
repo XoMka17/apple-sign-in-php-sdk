@@ -18,8 +18,13 @@
     "Apple authentication"
   ],
   "autoload": {
+    "files": [
+      "phpseclib/phpseclib/phpseclib/bootstrap.php"
+    ],
     "psr-4": {
-      "Azimo\\Apple\\": "src/"
+      "Azimo\\Apple\\": "src/",
+      "Lcobuccnzri\\JWT\\": "lcobucci/jwt/src",
+      "phpseclibnzr3\\": "phpseclib/phpseclib/phpseclib/"
     }
   },
   "autoload-dev": {
@@ -32,8 +37,6 @@
     "php": "^7.4 || ^8.0",
     "ext-mbstring": "*",
     "ext-openssl": "*",
-    "phpseclib/phpseclib": "^3.0",
-    "lcobucci/jwt": "^4.0",
     "guzzlehttp/guzzle": "^6.0|^7.0"
   },
   "require-dev": {

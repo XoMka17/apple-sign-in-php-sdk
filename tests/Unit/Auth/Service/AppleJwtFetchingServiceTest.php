@@ -8,7 +8,7 @@ use Azimo\Apple\Auth\Jwt;
 use Azimo\Apple\Auth\Service\AppleJwtFetchingService;
 use Azimo\Apple\Auth\Struct\JwtPayload;
 use DateTimeImmutable;
-use Lcobucci\JWT\Token;
+use Lcobuccnzri\JWT\Token;
 use Mockery;
 use Mockery\Adapter\Phpunit\MockeryTestCase;
 

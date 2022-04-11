@@ -3,7 +3,7 @@
 namespace Azimo\Apple\Auth\Jwt;
 
 use DateTimeImmutable;
-use Lcobucci\JWT;
+use Lcobuccnzri\JWT;
 
 class JwtValidator
 {

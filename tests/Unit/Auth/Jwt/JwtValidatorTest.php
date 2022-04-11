@@ -4,7 +4,7 @@ namespace Azimo\Apple\Tests\Unit\Auth\Jwt;
 
 use Azimo\Apple\Auth\Jwt\JwtValidator;
 use DateTimeImmutable;
-use Lcobucci\JWT;
+use Lcobuccnzri\JWT;
 use Mockery;
 use Mockery\Adapter\Phpunit\MockeryTestCase;
 

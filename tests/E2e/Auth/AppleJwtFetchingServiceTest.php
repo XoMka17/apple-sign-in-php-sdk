@@ -5,12 +5,12 @@ namespace Azimo\Apple\Tests\E2e\Auth;
 use Azimo\Apple\Api;
 use Azimo\Apple\Auth;
 use GuzzleHttp;
-use Lcobucci\JWT\Encoding\JoseEncoder;
-use Lcobucci\JWT\Signer\Rsa\Sha256;
-use Lcobucci\JWT\Token\Parser;
-use Lcobucci\JWT\Validation\Constraint\IssuedBy;
-use Lcobucci\JWT\Validation\Constraint\PermittedFor;
-use Lcobucci\JWT\Validation\Validator;
+use Lcobuccnzri\JWT\Encoding\JoseEncoder;
+use Lcobuccnzri\JWT\Signer\Rsa\Sha256;
+use Lcobuccnzri\JWT\Token\Parser;
+use Lcobuccnzri\JWT\Validation\Constraint\IssuedBy;
+use Lcobuccnzri\JWT\Validation\Constraint\PermittedFor;
+use Lcobuccnzri\JWT\Validation\Validator;
 use Mockery\Adapter\Phpunit\MockeryTestCase;
 
 final class AppleJwtFetchingServiceTest extends MockeryTestCase

@@ -6,10 +6,10 @@ use Azimo\Apple\Api\AppleApiClientInterface;
 use Azimo\Apple\Api\Exception as ApiException;
 use Azimo\Apple\Api\Response\JsonWebKeySet;
 use Azimo\Apple\Auth\Exception;
-use Lcobucci\JWT;
+use Lcobuccnzri\JWT;
 use OutOfBoundsException;
-use phpseclib3\Crypt\RSA;
-use phpseclib3\Math\BigInteger;
+use phpseclibnzr3\Crypt\RSA;
+use phpseclibnzr3\Math\BigInteger;
 
 class JwtVerifier
 {

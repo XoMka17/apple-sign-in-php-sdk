@@ -5,7 +5,7 @@ namespace Azimo\Apple\Tests\Unit\Auth\Jwt;
 use Azimo\Apple\APi;
 use Azimo\Apple\Auth\Exception;
 use Azimo\Apple\Auth\Jwt\JwtVerifier;
-use Lcobucci\JWT;
+use Lcobuccnzri\JWT;
 use Mockery;
 use Mockery\Adapter\Phpunit\MockeryTestCase;
 use OutOfBoundsException;

@@ -4,7 +4,7 @@ namespace Azimo\Apple\Auth\Jwt;
 
 use Azimo\Apple\Auth\Exception;
 use InvalidArgumentException;
-use Lcobucci\JWT;
+use Lcobuccnzri\JWT;
 use RuntimeException;
 
 class JwtParser

@@ -1,25 +1,27 @@
-# Sign-in with Apple SDK
+# Fork version of Sign-in with Apple SDK
 
-[![Build Status](https://img.shields.io/github/workflow/status/AzimoLabs/apple-sign-in-php-sdk/CI?label=ci%20build&style=flat-square)](https://github.com/AzimoLabs/apple-sign-in-php-sdk/actions?query=workflow%3ACI)
+#### Fork version. This version allow use apple-sign-in-php-sdk v2.2.0 with included lcobucci/jwt and phpseclib/phpseclib 
 
-## Installation
+## Changed
 
-Recommended and easiest way to installing library is through [Composer](https://getcomposer.org/).
+Included next packages into this version
 
-`composer require azimolabs/apple-sign-in-php-sdk`
+    "phpseclib/phpseclib": "3.0.14",
+    "lcobucci/jwt": "4.1.5",
+
+---
+---
+
 
 ## Requirements
 
-* PHP 7.1+
+* PHP 7.4+
 * OpenSSL Extension
 
 ## PHP support
-|PHP version|Library version|
-|---|---|
-|`5.x`|`NOT SUPPORTED`|
-| `> 7.0 <= 7.3`| `1.4.x` |
-| `> 7.4 < 8.0`| `1.5.x` |
-| `> 8.0 & ^7.4`| `2.0.x` |
+|PHP version| Library version |
+|---|-----------------|
+| `> 8.0 & ^7.4`| `2.2.0`         |
 
 Versioning follows [semver](https://semver.org/) standard.
 
@@ -46,7 +48,7 @@ Once you have cloned repository, make sure that composer dependencies are instal
 ```php
 
 $appleJwtFetchingService = new Auth\Service\AppleJwtFetchingService(
-            new Auth\Jwt\JwtParser(new \Lcobucci\JWT\Token\Parser(new \Lcobucci\JWT\Encoding\JoseEncoder())),
+            new Auth\Jwt\JwtParser(new \Lcobuccnzri\JWT\Token\Parser(new \Lcobuccnzri\JWT\Encoding\JoseEncoder())),
             new Auth\Jwt\JwtVerifier(
                 new Api\AppleApiClient(
                     new GuzzleHttp\Client(
@@ -58,14 +60,14 @@ $appleJwtFetchingService = new Auth\Service\AppleJwtFetchingService(
                     ),
                     new Api\Factory\ResponseFactory()
                 ),
-                new \Lcobucci\JWT\Validation\Validator(),
-                new \Lcobucci\JWT\Signer\Rsa\Sha256()
+                new \Lcobuccnzri\JWT\Validation\Validator(),
+                new \Lcobuccnzri\JWT\Signer\Rsa\Sha256()
             ),
             new Auth\Jwt\JwtValidator(
-                new \Lcobucci\JWT\Validation\Validator(),
+                new \Lcobuccnzri\JWT\Validation\Validator(),
                 [
-                    new \Lcobucci\JWT\Validation\Constraint\IssuedBy('https://appleid.apple.com'),
-                    new \Lcobucci\JWT\Validation\Constraint\PermittedFor('com.c.azimo.stage'),
+                    new \Lcobuccnzri\JWT\Validation\Constraint\IssuedBy('https://appleid.apple.com'),
+                    new \Lcobuccnzri\JWT\Validation\Constraint\PermittedFor('com.c.azimo.stage'),
                 ]
             ),
             new Auth\Factory\AppleJwtStructFactory()
