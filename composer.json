@@ -24,7 +24,7 @@
     "psr-4": {
       "Azimo\\Apple\\": "src/",
       "Lcobuccnzri\\JWT\\": "lcobucci/jwt/src",
-      "phpseclibnzr3\\": "phpseclib/phpseclib/phpseclib/"
+      "phpseclibnzr3\\": "phpseclib/phpseclib/phpseclib/",
     }
   },
   "autoload-dev": {
@@ -37,7 +37,13 @@
     "php": "^7.4 || ^8.0",
     "ext-mbstring": "*",
     "ext-openssl": "*",
-    "guzzlehttp/guzzle": "^6.0|^7.0"
+    "guzzlehttp/guzzle": "^6.0|^7.0",
+    "paragonie/constant_time_encoding": "^1|^2",
+    "paragonie/random_compat": "^1.4|^2.0|^9.99.99",
+    "ext-hash": "*",
+    "ext-json": "*",
+    "ext-sodium": "*",
+    "lcobucci/clock": "^2.0"
   },
   "require-dev": {
     "mockery/mockery": "^1.4",
